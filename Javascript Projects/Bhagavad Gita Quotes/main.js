@@ -6,3 +6,11 @@ const gitaquotes = [
 
   document.getElementById("dquote").innerHTML = gitaquotes[2];
 
+  document.getElementById("changequote").addEventListener ("click", dojo)
+
+  function dojo () {
+    alert("Hello ");
+  }
+
+
+  console.log(Math.floor(Math.random() * 3))
