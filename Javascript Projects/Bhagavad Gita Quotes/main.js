@@ -1,16 +1,21 @@
 const gitaquotes = [
-  "One who sees inaction in action, and action in inaction, is intelligent among men.",
-  "You should perform your duty with a view to guide people and for universal welfare.",
-  "Even the wise are confused about what is action and what is inaction."
-  ];
+    "`One who sees inaction in action, and action in inaction, is intelligent among men.`",
+    "You should perform your duty with a view to guide people and for universal welfare.",
+    "Even the wise are confused about what is action and what is inaction."
+];
 
-  document.getElementById("dquote").innerHTML = gitaquotes[2];
+let previousIndex = -1; // Initialize with an index that is out of bounds
 
-  document.getElementById("changequote").addEventListener ("click", dojo)
+function updateQuote() {
+    let randomIndex = Math.floor(Math.random() * gitaquotes.length);
+    // Generate a new random index until it's different from the previous index
+    while (randomIndex === previousIndex) {
+        randomIndex = Math.floor(Math.random() * gitaquotes.length);
+    }
+    previousIndex = randomIndex; // Update the previous index
+    document.getElementById("dquote").textContent = gitaquotes[randomIndex];
+}
 
-  function dojo () {
-    alert("Hello ");
-  }
+document.getElementById("changequote").addEventListener("click", updateQuote);
 
-
-  console.log(Math.floor(Math.random() * 3))
+updateQuote(); // Display a random quote by default
