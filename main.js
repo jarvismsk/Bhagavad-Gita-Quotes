@@ -72,7 +72,6 @@ const gitaquotes = [
         "“The mind acts like an enemy for those who do not control it.”",
         "“Perform your obligatory duty, because action is indeed better than inaction.”",
         "“Set your heart upon your work, but never on its reward.”",
-        "“The soul is neither born, nor does it die.”",
         "“The power of God is with you at all times; through the activities of mind, senses, breathing, and emotions; and is constantly doing all the work using you as a mere instrument.”",
         "“No one who does good work will ever come to a bad end, either here or in the world to come.”",
         "“It is better to live your own destiny imperfectly than to live an imitation of somebody else's life with perfection.”",
